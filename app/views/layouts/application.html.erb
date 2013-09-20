@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NMRSite</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class = "navbar navbar-fixed-top" >
+  <div class = "navbar-inner">
+    <div class = "container">
+
+      <!-- <a class = "btn btn-navbar" data-toggle = "collpase" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a> -->
+
+        <a href="/home" class="brand"><%= image_tag("#", size: "20x20") %>&nbsp;</a>
+
+
+       <div class="nav-collapse collapse" id="main-menu">
+          <ul class="nav" id="main-menu-left">
+            <li> <%= link_to( "Introduction", controller: "static_pages", action: "introduction") %></li>
+            <li> <%= link_to( "Experience", controller: "static_pages", action: "experience") %></li>
+            <li> <%= link_to( "Areas of Professional Services", controller: "static_pages", action: "services") %></li>
+            <li> <%= link_to( "Clients", controller: "static_pages", action: "clients") %></li>
+            <li> <%= link_to( "Internal Audit", controller: "static_pages", action: "audit") %></li>
+            <li> <%= link_to( "Previous Experiences", controller: "static_pages", action: "pre_exp") %></li>
+          </ul>
+        </div>
+   </div>
+ </div>
+</div>
+
+
+<%= yield %>
+
+
+</body>
+</html>
