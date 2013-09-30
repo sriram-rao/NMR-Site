@@ -11,7 +11,10 @@ class StaticPagesController < ApplicationController
 	def services
 	end
 
-	def clients
+	def our_clients
+	end
+
+	def type_clients
 	end
 
 	def audit

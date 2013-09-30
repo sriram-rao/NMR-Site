@@ -26,7 +26,19 @@
             <li> <%= link_to( "Introduction", controller: "static_pages", action: "introduction") %></li>
             <li> <%= link_to( "Experience", controller: "static_pages", action: "experience") %></li>
             <li> <%= link_to( "Areas of Professional Services", controller: "static_pages", action: "services") %></li>
-            <li> <%= link_to( "Clients", controller: "static_pages", action: "clients") %></li>
+            <li class="dropdown">
+
+            <a class="dropdown-toggle" href='#' data-toggle="dropdown">
+              Clients
+            <b class="caret"></b>
+            </a> 
+
+            <ul class="dropdown-menu" >
+                <li><%= link_to("Types of Clients","#")%></li>
+                <li><%= link_to("Our Clients",'#')%></li>
+            </ul>
+
+            </li>
             <li> <%= link_to( "Internal Audit", controller: "static_pages", action: "audit") %></li>
             <li> <%= link_to( "Previous Experiences", controller: "static_pages", action: "pre_exp") %></li>
           </ul>

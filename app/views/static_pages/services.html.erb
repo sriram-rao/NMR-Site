@@ -108,7 +108,7 @@ We provide various services related to this field which are ranging from Getting
 	<p style="text-align:justify;">Consultancy in accounting matters as well as preparation and finalization of financials and stock accounts by qualified CA and accounting technicians according to Accounting Standards, IND AS, IFRS.<br> 
 Periodical Financial reporting on trial balance, profit/ loss, debtors, creditors, budgeting, cash/ fund flow statements, BRS, ratio analysis, reporting of weakness in internal control systems etc. 
   </p>
-	<a href="javascript:sizeTbl('none','ps10')">Hide</a>
+	<!-- <a href="javascript:sizeTbl('none','ps10')">Hide</a> -->
 </div>
 </td></tr>
 
@@ -120,7 +120,7 @@ Periodical Financial reporting on trial balance, profit/ loss, debtors, creditor
 	<p style="text-align:justify;">
 		Handling grass root level execution of vast range of tax requirements, covering diverse statutes (preparation, finalization and filling of all returns relevant to different departments like income tax, VAT, Service Tax, Excise, TDS, PF, ESI, Labor & Factories Act,  
   </p>
-	<a href="javascript:sizeTbl('none','ps11')">Hide</a>
+	<!-- <a href="javascript:sizeTbl('none','ps11')">Hide</a> -->
 </div>
 </td></tr>
 
@@ -132,7 +132,7 @@ Periodical Financial reporting on trial balance, profit/ loss, debtors, creditor
 	<p style="text-align:justify;">
 		Preparation of Standard Operating Procedures and Policies which also includes Delegation of Authorities, various operational formats, Key Responsibility Areas, Key Performance Indicators, MIS Reports etc.  
   </p>
-	<a href="javascript:sizeTbl('none','ps12')">Hide</a>
+	<!-- <a href="javascript:sizeTbl('none','ps12')">Hide</a> -->
 </div>
 </td></tr>
 
@@ -147,7 +147,11 @@ Periodical Financial reporting on trial balance, profit/ loss, debtors, creditor
 <!--
 function sizeTbl(h,id) {
   var tbl = document.getElementById(id);
-  tbl.style.display = h;
+  var cur = tbl.style.display;
+  if(cur=='none')
+  	tbl.style.display = h;
+  else
+  	tbl.style.display = 'none';
 }
 // -->
 </script> 
