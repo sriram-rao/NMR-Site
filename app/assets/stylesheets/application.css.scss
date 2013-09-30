@@ -17,11 +17,12 @@
 
  body
  {
-     padding-top: 60px;
-     margin-top: 50px;
+     // padding-top: 60px;
+     // margin-top: 50px;
      margin-left: 50px;
      margin-right: 50px;
      background-color: #ffffff;
+     margin-bottom: 0px;
  }
 
 /*@import "bootstrap-responsive";*/
@@ -41,4 +42,14 @@ h2, h3
 .greytr
 {
 	background-color: rgb(249,249,249);
+}
+#dark-well
+{
+    background-color: #D6D6D6;
+}
+.bb
+{
+    border-bottom: 1px solid #D6D6D6;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
 }

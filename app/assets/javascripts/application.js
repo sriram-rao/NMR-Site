@@ -14,3 +14,13 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-dropdown.js
+
+// $(function(){
+
+// var height= $(document).height();
+// var width= $(window).width();
+// $("body").append("<div class='bsa well' id='dark-well' style='position:absolute; top:"+ height +"px;width:"+width+"px;height:200px;margin-left:0px;margin-top:50px;padding:0px;left:0px;'>THIS IS A FOOTER!</div>");
+
+
+// });
